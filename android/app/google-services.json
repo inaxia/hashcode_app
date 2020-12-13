@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "860094707101",
+    "firebase_url": "https://inaxia-hashcode.firebaseio.com",
+    "project_id": "inaxia-hashcode",
+    "storage_bucket": "inaxia-hashcode.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:860094707101:android:22f69a3fc8595aae4ceb74",
+        "android_client_info": {
+          "package_name": "com.inaxia.hashcode"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "860094707101-850as7hh5vlbngt1hoia7ja2ubda8tcm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtH8ZqBXIX3YCAqOXeDE9h8ayRiDraldQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "860094707101-850as7hh5vlbngt1hoia7ja2ubda8tcm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
