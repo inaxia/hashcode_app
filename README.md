@@ -26,13 +26,15 @@ We got the inspiration of this idea with the help of our fellow friends who want
 
 
 ## Installation
+**You need to do changes only in `develop` branch**
 1. Fork this repo
 2. Clone the forked repo
 3. Open the main/parent `hashcode_app` folder
 4. Run the following commands inside `hashcode_app`'s terminal:
-    1. `flutter channel stable`
-    2. `flutter upgrade`
-    3. `flutter run` -> make sure an android/emulator device is connected
+    1. `git branch kwoc`
+    2. `flutter channel stable`
+    3. `flutter upgrade`
+    4. `flutter run` -> make sure an android/emulator device is connected
 
 
 ## Visual

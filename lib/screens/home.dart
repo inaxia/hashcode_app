@@ -4,7 +4,6 @@ import 'package:hashcode/custom/custom_colors.dart';
 import 'package:hashcode/custom/custom_gifs.dart';
 import 'package:hashcode/custom/page_transitions/slide_left_route.dart';
 import 'package:hashcode/screens/lessons.dart';
-import 'package:hashcode/screens/test_page.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -21,7 +20,7 @@ class Home extends StatelessWidget {
           actions: [
             GestureDetector(
               onTap: () {
-                Navigator.push(context, SlideLeftRoute(page: TestPage()));
+                Navigator.push(context, SlideLeftRoute(page: Lessons()));
               },
               child: CircleAvatar(
                 backgroundColor: Colors.white70,
