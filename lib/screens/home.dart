@@ -4,19 +4,35 @@ import 'package:hashcode/custom/custom_colors.dart';
 import 'package:hashcode/custom/custom_gifs.dart';
 import 'package:hashcode/custom/page_transitions/slide_left_route.dart';
 import 'package:hashcode/screens/lessons.dart';
+import 'package:hashcode/theme.dart';
+import 'package:provider/provider.dart';
 
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+     ThemeChanger _themeChanger = Provider.of<ThemeChanger>(context);
     final body = CustomScrollView(
       physics: BouncingScrollPhysics(),
       slivers: [
         SliverAppBar(
           floating: true,
           pinned: false,
-          backgroundColor: customDarkBlack,
+          // backgroundColor: customDarkBlack,
           elevation: 1.0,
-          title: Text('Dashboard'),
+          title: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text('Dashboard'),
+                         Switch(
+                        value: _themeChanger.lightDark,
+                        onChanged: (lightDark) {
+                          if (lightDark)
+                            _themeChanger.setTheme(ThemeData.light());
+                          else
+                            _themeChanger.setTheme(ThemeData.dark());
+                        })
+            ],
+          ),
           actions: [
             GestureDetector(
               onTap: () {
@@ -68,7 +84,7 @@ class Home extends StatelessWidget {
     );
 
     return Scaffold(
-      backgroundColor: customDarkBlack,
+     
       body: body,
     );
   }
