@@ -18,21 +18,17 @@ class Home extends StatelessWidget {
           floating: true,
           pinned: false,
           elevation: 1.0,
-          title: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text('Dashboard'),
-                         Switch(
+          title: Text('Dashboard'),
+          actions: [
+               Switch(
                         value: _themeChanger.isLightTheme,
                         onChanged: (lightDark) {
                           if (lightDark)
                             _themeChanger.setTheme(ThemeData.light());
                           else
                             _themeChanger.setTheme(ThemeData.dark());
-                        })
-            ],
-          ),
-          actions: [
+                        }),
+
             GestureDetector(
               onTap: () {
                 Navigator.push(context, SlideLeftRoute(page: Lessons()));
