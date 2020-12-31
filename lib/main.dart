@@ -33,8 +33,7 @@ class HashCodeApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'HashCode App',
       home: Home(),
-     theme: theme.getTheme(),
-        //  theme: ThemeData(accentColor: customPink),
+      theme: theme.getTheme(),
     );
   }
 }
@@ -42,13 +41,3 @@ class HashCodeApp extends StatelessWidget {
 
 
 
-
-// class MyApp extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       theme: ThemeData(accentColor: customDarkBlack),
-//       home: Home(),
-//     );
-//   }
-// }
