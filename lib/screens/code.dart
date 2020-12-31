@@ -26,7 +26,6 @@ class _CodeState extends State<Code> {
   Widget build(BuildContext context) {
     final appBar = AppBar(
       elevation: 1.0,
-      backgroundColor: customDarkBlack,
       title: Text('About'),
       centerTitle: true,
       leading: IconButton(

@@ -101,7 +101,6 @@ class _AboutTopicState extends State<AboutTopic> {
     );
 
     return Scaffold(
-      backgroundColor: customDarkBlack,
       appBar: appBar,
       body: body,
     );

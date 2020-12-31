@@ -17,7 +17,6 @@ class Home extends StatelessWidget {
         SliverAppBar(
           floating: true,
           pinned: false,
-          // backgroundColor: customDarkBlack,
           elevation: 1.0,
           title: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
