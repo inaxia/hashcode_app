@@ -30,7 +30,7 @@ class HashCodeApp extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Provider.of<ThemeChanger>(context);
     return MaterialApp(
-        debugShowCheckedModeBanner: false,
+        debugShowCheckedModeBanner: true,
         title: 'HashCode App',
       home: Home(),
       theme: theme.getTheme(),

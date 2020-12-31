@@ -23,7 +23,7 @@ class Home extends StatelessWidget {
             children: [
               Text('Dashboard'),
                          Switch(
-                        value: _themeChanger.lightDark,
+                        value: _themeChanger.isLightTheme,
                         onChanged: (lightDark) {
                           if (lightDark)
                             _themeChanger.setTheme(ThemeData.light());

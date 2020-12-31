@@ -3,15 +3,15 @@ import 'package:flutter/material.dart';
 
 class ThemeChanger with ChangeNotifier {
   ThemeData _themeData;
-  bool lightDark = false;
+  bool isLightTheme = false;
   ThemeChanger(this._themeData);
 
   getTheme() => _themeData;
   setTheme(ThemeData theme) {
     if (theme == ThemeData.dark())
-      lightDark = false;
+      isLightTheme = false;
     else
-      lightDark = true;
+      isLightTheme = true;
     _themeData = theme;
     notifyListeners();
   }
