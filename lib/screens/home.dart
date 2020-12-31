@@ -24,7 +24,7 @@ class Home extends StatelessWidget {
                         value: _themeChanger.isLightTheme,
                         onChanged: (lightDark) {
                           if (lightDark)
-                            _themeChanger.setTheme(ThemeData.light());
+                            _themeChanger.setTheme(ThemeData(primaryColor: Colors.white));
                           else
                             _themeChanger.setTheme(ThemeData.dark());
                         }),
