@@ -21,7 +21,6 @@ class Lessons extends StatelessWidget {
           centerTitle: true,
           title: Text('Lessons'),
           elevation: 1.0,
-          backgroundColor: customDarkBlack,
           leading: IconButton(
             icon: Icon(Icons.arrow_back),
             onPressed: () {
@@ -37,7 +36,7 @@ class Lessons extends StatelessWidget {
                   Navigator.push(context, SlideLeftRoute(page: AboutTopic(lesson: courseContent[index])));
                 },
                 child: Card(
-                  color: customLightBlack,
+                  // color: customLightBlack,
                   elevation: 8.0,
                   margin: EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0),
                   child: ListTile(
@@ -48,19 +47,19 @@ class Lessons extends StatelessWidget {
                         border: Border(
                           right: BorderSide(
                             width: 1.0,
-                            color: Colors.white24
+                            // color: Colors.white24
                           ),
                         ),
                       ),
                       child: Text(
                         (index + 1).toString(),
-                        style: TextStyle(color: Colors.white, fontSize: 18.0),
+                        style: TextStyle( fontSize: 18.0),
                       ),
                     ),
                     title: Text(
                       courseContent[index][0],
                       style: TextStyle(
-                        color: Colors.white,
+                        // color: Colors.white,
                         fontWeight: FontWeight.bold
                       ),
                     ),
@@ -69,7 +68,6 @@ class Lessons extends StatelessWidget {
                         Icon(Icons.linear_scale, color: customPink),
                         Text(
                           " Intermediate",
-                          style: TextStyle(color: Colors.white),
                         ),
                       ],
                     ),
@@ -84,7 +82,6 @@ class Lessons extends StatelessWidget {
     );
 
     return Scaffold(
-      backgroundColor: customDarkBlack, 
       body: body
     );
   }
